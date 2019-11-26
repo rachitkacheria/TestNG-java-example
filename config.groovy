@@ -37,27 +37,7 @@ Build URL: ${BUILD_URL}
 		<p>Hello<b>!</b><br/>
 		<%
 			def browserName = "Mozilla Firefox"
-			if ("${build.buildVariableResolver.resolve("driver_name")}" == ('chromeDriver')) {
-				browserName = "Google Chrome"
-			} 
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('appiumDriver')) {
-				browserName = "Apple Safari"
-			}
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('chromeRemoteDriver')) {
-				browserName = "Google Chrome"
-			}
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('firefoxDriver')) {
-				browserName = "Mozilla Firefox"
-			}
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('firefoxRemoteDriver')) {
-				browserName = "Mozilla Firefox"
-			}
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('iExplorerDriver')) {
-				browserName = "Internet Explorer"
-			}
-			else if ("${build.buildVariableResolver.resolve("driver_name")}" == ('iExplorerRemoteDriver')) {
-				browserName = "Internet Explorer"
-			}
+			
 			def testResult = build.testResultAction
 			
 			int passCount = 0
