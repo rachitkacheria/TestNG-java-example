@@ -24,7 +24,6 @@ BODY_MIME_TYPE = "text/html"
 // Project Details
 MESSAGE_PROJECT_DETAILS = """
 Project Name: ${JOB_NAME}
-Branch: ${BRANCH_NAME}
 Project URL: ${JOB_URL}
 Build Number: ${BUILD_NUMBER}
 Build URL: ${BUILD_URL}
