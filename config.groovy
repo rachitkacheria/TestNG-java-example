@@ -1,3 +1,6 @@
+import java.util.concurrent.TimeUnit
+@NonCPS
+
 //-----------------Read XML file to fetch the result-------------------
 def xml = readFile "${env.WORKSPACE}/target/surefire-reports/testng-results.xml"
        
